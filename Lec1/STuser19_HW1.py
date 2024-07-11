@@ -56,7 +56,7 @@ test_dataset = txt_dataset('./test_data', './test_label', 3)
 trainloader = DataLoader(train_dataset, shuffle = True, batch_size = 3)
 
 # declare testing dataloader
-testloader = DataLoader(test_dataset, shuffle = True, batch_size = 3)
+testloader = DataLoader(test_dataset, shuffle = True, batch_size = 1)
 
 print('train_data & label')
 for index, data_package in enumerate(trainloader):
